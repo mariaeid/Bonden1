@@ -20,6 +20,11 @@ function confirmDeleteAccount() {
   }
 };
 
+// Function for information of reset password
+function infoResetPassword() {
+  alert("Ett mail med lösenord för återställning har skickats till den angivna mailadressen. OBS. Kolla även din skräppost.")
+};
+
 ////// START - INFO.PHP JavaScript - Only load when using info.php //////
 // If close1 is null we are NOT on info.php page and therefore should not use the following JS
 const close1 = document.querySelector('#close1');

@@ -27,7 +27,7 @@ if (isset($_POST['email'], $_POST['password'])) {
             unset($user['password']);
             $_SESSION['user'] = $user;
 
-            redirect('/posts.php');
+            redirect('/index.php');
         }
         //Saving error variable if the user password and email don't match
         else {

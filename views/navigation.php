@@ -14,17 +14,24 @@
                   <a class="nav-link <?php echo $_SERVER['SCRIPT_NAME'] === '/proposals.php' ? 'active' : ''; ?>" href="/proposals.php"><?php echo "Motioner" ?></a>
               <?php endif; ?>
           </li><!-- /nav-item -->
-          <li class="nav-item">
-              <a class="nav-link <?php echo $_SERVER['SCRIPT_NAME'] === '/info.php' ? 'active' : ''; ?>" href="/info.php">Om föreningen</a>
-          </li><!-- /nav-item -->
-          <li class="nav-item">
-              <a class="nav-link <?php echo $_SERVER['SCRIPT_NAME'] === '/board.php' ? 'active' : ''; ?>" href="/board.php">Styrelsen</a>
-          </li><!-- /nav-item -->
-          <li class="nav-item">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle
+            <?php if ($_SERVER['SCRIPT_NAME'] === '/info.php' || $_SERVER['SCRIPT_NAME'] === '/board.php' || $_SERVER['SCRIPT_NAME'] === '/users.php'): ?>
+                <?php echo 'active' ?>
+                <?php else: ?>
+                    <?php echo '' ?>
+            <?php endif; ?>
+             " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Om föreningen
+            </a>
+            <div class="dropdown-menu bg-dark " aria-labelledby="navbarDropdown">
+              <a class="dropdown-item fontNavDropdown dropdownHover" href="/info.php">Allmän information</a>
+              <a class="dropdown-item fontNavDropdown dropdownHover" href="/board.php">Styrelsen</a>
               <?php if (isset($_SESSION['user'])): ?>
-                  <a class="nav-link <?php echo $_SERVER['SCRIPT_NAME'] === '/users.php' ? 'active' : ''; ?>" href="/users.php"><?php echo "Medlemmar" ?></a>
+                  <a class="dropdown-item fontNavDropdown dropdownHover" href="/users.php"><?php echo "Medlemmar" ?></a>
               <?php endif; ?>
-          </li><!-- /nav-item -->
+          </li>
+
       </ul>
       <ul class="navbar-nav ml-auto">
           <li class="nav-item">

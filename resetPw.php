@@ -27,7 +27,7 @@ require __DIR__.'/views/header.php';
             </div><!-- /form-group -->
 
             <div class="form-group col-sm-5">
-                <label for="currentPassword">Återställt lösenord</label>
+                <label for="currentPassword">Återsällningslösenord</label>
                 <input class="form-control" type="password" name="currentPassword" required>
             </div><!-- /form-group -->
 

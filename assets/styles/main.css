@@ -4,6 +4,7 @@ body {
   background-color: #fff;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
 }
 
 p {
@@ -13,6 +14,15 @@ p {
 .fontNav {
   font-size: 14px !important;
   line-height: 1;
+}
+
+.fontNavDropdown {
+  font-size: 13px;
+  color: #fff !important;
+}
+
+.dropdownHover:hover {
+  background-color: #484d53 !important;
 }
 
 .logo {
@@ -42,7 +52,7 @@ p {
 }
 
 .backgroundImgOthers {
-  background: url("../../app/imgs/site/watercolor_high.jpg") no-repeat top right;
+  background: url("../../app/imgs/site/watercolor_high.jpg") no-repeat center bottom;
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;

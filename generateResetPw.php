@@ -21,7 +21,7 @@ require __DIR__.'/views/header.php';
                         <?php unset($_SESSION['emailSave']);?>
                     <?php endif; ?>>
             </div><!-- /form-group -->
-            <button type="submit" class="btn btnFirst" name="reset">Återställ lösenord</button>
+            <button type="submit" class="btn btnFirst" name="reset" onclick="infoResetPassword();">Återställ lösenord</button>
             <button type="submit" class="btn btnSecond" name="cancel" formnovalidate>Ångra</button>
         </form>
 

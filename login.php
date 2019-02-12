@@ -30,7 +30,7 @@ require __DIR__.'/views/header.php';
             <button type="submit" class="btn btnFirst mb-3">Logga in</button>
         </form>
         <form class="" action="generateResetPw.php" method="post">
-            <button type="submit" class="btn btnSecond">Återställ lösenord</button>
+            <button type="submit" class="btn btnSecond">Glömt lösenord?</button>
         </form>
 
 <?php require __DIR__.'/views/footer.php'; ?>
