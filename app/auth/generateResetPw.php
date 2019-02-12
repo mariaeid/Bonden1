@@ -35,21 +35,18 @@ if (isset($_POST['reset'])) {
             $statement->bindParam(':reset_password', $resetPassword, PDO::PARAM_STR);
             $statement->execute();
 
-            $to = $user->email;
+            $to = $email;
 
             // Subject
             $subject = 'Bonden1 - återställning av lösenord';
 
             // Message
-            $message = '<p>We recieved a password reset request. The link to reset your password is below. ';
-            $message .= 'If you did not make this request, you can ignore this email</p>';
-            $message .= '<p>Here is your password reset link:</br>';
-            // $message .= sprintf('<a href="%s">%s</a></p>', $url, $url);
-            $message .= '<p>Thanks!</p>';
+            $message = '<p>Här kommer lösenordet för återställning av ditt konto på Bonden1. </p>';
+            $message .= sprintf('<p>Återställningslösenord: %s</p>', $resetPassword);
+            $message .= '<p>Klicka här för att slutföra återställningen: <a href="http://www.bonden1.se/resetPw.php">http://www.bonden1.se/resetPw.php</a></p>';
 
             // Headers
-            $headers = "From: Bonden1Robot <bonden1bokning@gmail.com>\r\n";
-            // $headers .= "Reply-To: " . ADMIN_EMAIL . "\r\n";
+            $headers = "From: Bonden1Admin  <admin@bonden1.se>\r\n";
             $headers .= "Content-type: text/html\r\n";
 
             // Send email
