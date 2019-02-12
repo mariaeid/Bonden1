@@ -5,7 +5,7 @@ require __DIR__.'/views/header.php';
 
 <div class="backgroundImgOthers">
     <article>
-        <h1 class="mb-3">Återställ lösenord</h1>
+        <h1 class="mb-3">Logga in med återställt lösenord</h1>
 
         <form action="/app/auth/resetPw.php" method="post">
 
@@ -27,7 +27,7 @@ require __DIR__.'/views/header.php';
             </div><!-- /form-group -->
 
             <div class="form-group col-sm-5">
-                <label for="currentPassword">Återställningslösenord</label>
+                <label for="currentPassword">Återställt lösenord</label>
                 <input class="form-control" type="password" name="currentPassword" required>
             </div><!-- /form-group -->
 

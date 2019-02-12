@@ -29,7 +29,7 @@
       <ul class="navbar-nav ml-auto">
           <li class="nav-item">
               <?php if (isset($_SESSION['user'])): ?>
-                  <a class="nav-link <?php echo $_SERVER['SCRIPT_NAME'] === '/profile.php' ? 'active' : ''; ?>" href="/profile.php"><?php echo "Din profil" ?></a>
+                  <a class="nav-link <?php echo $_SERVER['SCRIPT_NAME'] === '/profile.php' ? 'active' : ''; ?>" href="/profile.php"><?php echo $_SESSION['user']['name'] ?></a>
               <?php endif; ?>
           </li><!-- /nav-item -->
           <li class="nav-item">
