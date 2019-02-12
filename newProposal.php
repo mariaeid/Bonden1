@@ -7,7 +7,7 @@ if(!isset($_SESSION['user'])){ redirect("/"); } else { $user = $_SESSION['user']
 
     <article>
 
-        <form action="/app/proposals/store.php" method="post" enctype="multipart/form-data" class="widthForm">
+        <form action="/app/proposals/store.php" method="post" enctype="multipart/form-data">
             <h4 class="pb-3">Skicka in motion</h4>
             <div class="form-group col-sm-7">
                 <label for="title">Titel</label>

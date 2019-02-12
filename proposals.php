@@ -11,9 +11,9 @@ $proposals = allProposals($pdo);
             <button type="submit" name="newLink" class="btn btnSecond float-right"><?php echo "Lägg till motion" ?></button>
         <?php endif; ?>
     </form>
-    <div class="flexContainerNews">
+    <div class="flexContainerPostsProposals">
         <?php foreach ($proposals as $proposal): ?>
-            <div class="boxNews p-5 m-3">
+            <div class="boxPostsProposals p-5 m-3">
                 <div class="px-3 flexContainerRow">
                     <div>
                         <h4 id="<?php echo $proposal['title']?>" class="postTitle highlightFirst"><?php echo $proposal['title']; ?></h3>

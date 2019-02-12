@@ -11,7 +11,7 @@ $proposals = allProposals($pdo);
 <div class="startOthers">
     <div class="flexContainerProfile">
         <div class="profileDetails">
-            <div class="textBoxDarkProfile">
+            <div class="textBoxProfileDetails">
                 <div>
                     <h3 class="mb-4">Profiluppgifter</h3>
                     <h5 class="py-3"><?php echo $_SESSION['user']['name'];?>
@@ -27,7 +27,7 @@ $proposals = allProposals($pdo);
                         <p> <span class="font-weight-bold">Tel: </span><?php echo $_SESSION['user']['phone'];?></p>
                         <p class="pb-3"> <span class="font-weight-bold">Adress: </span><?php echo $_SESSION['user']['street'].' '.$_SESSION['user']['street_no'];?></p>
                 </div>
-                <div>
+                <div class="centerButtonsProfile">
                     <form action="/profileEdit.php" method="post">
                         <button type="submit" name="edit" class="btn btnSecond mb-3">Ändra uppgifter</button>
                     </form>
@@ -38,7 +38,7 @@ $proposals = allProposals($pdo);
             </div>
         </div>
         <div class="postsProposals">
-            <div class="textBoxDark">
+            <div class="textBoxProfile">
                 <h3 class="mb-4">Dina Nyhetsposter</h3>
                 <div class="mt-5 mb-4">
                     <form action="/newpost.php" method="post">
@@ -61,7 +61,7 @@ $proposals = allProposals($pdo);
                 <?php endforeach; ?>
             </div>
 
-            <div class="textBoxDark">
+            <div class="textBoxProfile">
                 <h3 class="mb-4">Dina Motioner</h3>
                 <div class="mt-5 mb-4">
                     <form action="/newProposal.php" method="post">

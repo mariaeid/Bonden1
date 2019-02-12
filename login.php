@@ -6,7 +6,7 @@ require __DIR__.'/views/header.php';
         <form action="/app/auth/login.php" method="post">
             <h1 class="py-2">Logga in</h1>
                 <!-- Showing error message if the form has been submitted with errors -->
-            <div class="form-group width">
+            <div class="form-group col-sm-3">
                 <?php if (isset($_SESSION['error'])): ?>
                     <p class="alert alert-danger"><?php echo $_SESSION['error']; unset($_SESSION['error']);?></p>
                 <?php endif; ?>
@@ -15,7 +15,7 @@ require __DIR__.'/views/header.php';
             <div class="form-group">
                 <label for="email">Mail</label>
                 <!-- If a user has submitted the form with errors, the data previously entered is shown in the value of the field -->
-                <input class="form-control width" type="email" name="email" required value=
+                <input class="form-control col-sm-3" type="email" name="email" required value=
                     <?php if (isset($_SESSION['emailSave'])):?>
                         "<?php echo $_SESSION['emailSave']?>"
                         <?php unset($_SESSION['emailSave']);?>
@@ -24,7 +24,7 @@ require __DIR__.'/views/header.php';
 
             <div class="form-group">
                 <label for="password">Lösen</label>
-                <input class="form-control width" type="password" name="password" required>
+                <input class="form-control col-sm-3" type="password" name="password" required>
             </div><!-- /form-group -->
 
             <button type="submit" class="btn btnFirst mb-3">Logga in</button>

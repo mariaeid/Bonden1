@@ -11,9 +11,9 @@ $posts = allPosts($pdo);
             <button type="submit" name="newLink" class="btn btnSecond float-right"><?php echo "Lägg till nyhet" ?></button>
         <?php endif; ?>
     </form>
-    <div class="flexContainerNews">
+    <div class="flexContainerPostsProposals">
         <?php foreach ($posts as $post): ?>
-            <div class="boxNews p-5 m-3">
+            <div class="boxPostsProposals p-5 m-3">
                 <div class="px-3 flexContainerRow">
                     <div>
                         <h4 id="<?php echo $post['title']?>" class="postTitle highlightFirst"><?php echo $post['title']; ?></h3>
