@@ -33,7 +33,6 @@ $posts = allPosts($pdo);
             <span class="close" id="close2">&times;</span>
             <h4 class="pb-2">Föreningslokal</h4>
             <p>Föreningslokalen ligger på Hultebackavägen xx</p>
-            <a href="booking.php" class="highlightThird">Boka föreningslokalen</a>
           </div>
         </div>
         <!--SELECTION 3 -->
@@ -47,8 +46,8 @@ $posts = allPosts($pdo);
           <div class="modalContent">
             <span class="close" id="close3">&times;</span>
             <h4 class="pb-2">Protokoll från årsmöten</h4>
-                <a href="app/uploadedFiles/protocol/2018.pdf" class="highlightThird fontMedium" target="_blank">2018</a>
-                <a href="app/uploadedFiles/protocol/2018.pdf" class="highlightThird fontMedium" target="_blank">2017</a>
+            <a href="app/uploadedFiles/protocol/2018.pdf" class="highlightThird" target="_blank">2018</a>
+            <a href="app/uploadedFiles/protocol/2018.pdf" class="highlightThird" target="_blank">2017</a>
             </div>
           </div>
         </div>

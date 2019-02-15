@@ -5,8 +5,6 @@ require __DIR__.'/views/header.php';
 
 <div class="backgroundImgForms">
     <form action="/app/auth/resetPw.php" method="post">
-        <p class="col-md-6 alert alert-info py-2 mt-5">Ett mail med lösenord för återställning har skickats till den angivna mailadressen. </br> Inte fått något mail? Kolla skräpposten!</p>
-        <h3 class="mt-3">Logga in med återställt lösenord</h3>
         <!-- Displaying error messages if there were any when the form was submitted -->
         <?php if (isset($_SESSION['error'])): ?>
             <p class="alert alert-danger col-md-6"><?php echo $_SESSION['error']; unset($_SESSION['error']);?></p>

@@ -3,22 +3,22 @@ require __DIR__.'/views/header.php';
 if(!isset($_SESSION['user'])){ redirect("/"); } else { $user = $_SESSION['user'];}
 ?>
 
-<div class="backgroundImgOthers">
+<div class="backgroundImgForms">
 
     <article>
-        <h1>Ändra uppgifter</h1>
+        <h3 class="py-2 mt-5">Ändra uppgifter</h3>
 
         <form action="app/auth/editDelete.php" method="post">
 
             <!-- Displaying error messages if there were any when the form was submitted -->
-            <div class="form-group col-sm-7">
+            <div class="form-group col-md-7">
                 <?php if (isset($_SESSION['error'])): ?>
                     <p class="alert alert-danger"><?php echo $_SESSION['error']; unset($_SESSION['error']);?></p>
                 <?php endif; ?>
             </div><!-- /form-group -->
 
             <div class="form-group row">
-                <div class="col-sm-7">
+                <div class="col-md-7">
                     <label for="name">Namn <small> (för- och efternamn)</small></label>
                     <!-- If a user has submitted the form with errors, the data previously entered is shown in the value of the field -->
                     <input class="form-control" type="text" name="name" value="<?php echo $_SESSION['user']['name'];?>" required>
@@ -26,7 +26,7 @@ if(!isset($_SESSION['user'])){ redirect("/"); } else { $user = $_SESSION['user']
             </div><!-- /form-group -->
 
             <div class="form-group row">
-                <div class="col-sm-7">
+                <div class="col-md-7">
                     <label for="cohabitant">Namn på ev. sambo/make/maka <small> (för- och efternamn)</small></label>
                     <!-- If a user has submitted the form with errors, the data previously entered is shown in the value of the field -->
                     <input class="form-control" type="text" name="cohabitant" value="<?php echo $_SESSION['user']['cohabitant'];?>">
@@ -34,14 +34,14 @@ if(!isset($_SESSION['user'])){ redirect("/"); } else { $user = $_SESSION['user']
             </div><!-- /form-group -->
 
             <div class="form-group row">
-                <div class="col-sm-7">
+                <div class="col-md-7">
                     <label for="email">Mail</label>
                     <input class="form-control" type="email" name="email" value="<?php echo $_SESSION['user']['email'];?>" required>
                 </div>
             </div><!-- /form-group -->
 
             <div class="form-group row">
-                <div class="col-sm-7">
+                <div class="col-md-7">
                     <label for="phone">Telefon</label>
                     <input class="form-control" type="text" name="phone" value="<?php echo $_SESSION['user']['phone'];?>" required>
                 </div>

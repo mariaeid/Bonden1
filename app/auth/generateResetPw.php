@@ -43,7 +43,7 @@ if (isset($_POST['reset'])) {
             // Message
             $message = '<p>Här kommer lösenordet för återställning av ditt konto på Bonden1. </p>';
             $message .= sprintf('<p>Återställningslösenord: %s</p>', $resetPassword);
-            $message .= '<p>Klicka här för att slutföra återställningen: <a href="http://www.bonden1.se/resetPw.php">http://www.bonden1.se/resetPw.php</a></p>';
+            $message .= '<p>Klicka här för att slutföra återställningen: <a href="http://www.bonden1.se/resetPwLink.php">http://www.bonden1.se/resetPwLink.php</a></p>';
 
             // Headers
             $headers = "From: Bonden1Admin  <admin@bonden1.se>\r\n";

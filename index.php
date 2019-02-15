@@ -11,7 +11,7 @@ $posts = allPosts($pdo);
             <h1 class="startTitle"><?php echo $config['title']; ?> </h1>
             <p class="py-3 px-5 startText">Välkommen till samfälligheten Bonden ett. Här hittar ni information om vad som är på gång inom föreningen, protokoll från från årsmöten, information om  samfällighetens lokal och redskap som finns till utlåning samt kontaktuppgifter styrelse och medlemmar.</p>
             <?php if (!isset($_SESSION['user'])): ?>
-                <p class="startText pb-3">Medlem i föreningen?
+                <p class="startText pb-3 px-5">Medlem i föreningen?
                     <a class="highlightThird" href="/login.php">Logga in</a>
                     eller
                     <a class="highlightThird" href="/signup.php">skapa användare</a>

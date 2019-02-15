@@ -41,7 +41,7 @@ $proposals = allProposals($pdo);
             <div class="textBoxProfile">
                 <h3 class="mb-4">Dina Nyhetsposter</h3>
                 <div class="mt-5 mb-4">
-                    <form action="/newpost.php" method="post">
+                    <form action="/newPost.php" method="post">
                         <button type="submit" name="newLink" class="btn btnSecond"><?php echo "Lägg till nyhet" ?></button>
                     </form>
                 </div>
@@ -51,7 +51,7 @@ $proposals = allProposals($pdo);
                         <form action="/postEdit.php" method="post">
                             <div class="form-group border p-3 my-3 posts infoContainer">
                                 <div>
-                                    <h6 class="postTitle"><?php echo $post['title']; ?></h6>
+                                    <p class="titleEdit"><?php echo $post['title']; ?></p>
                                 </div>
                                 <input type="hidden" name="post_id" value="<?php echo $post['post_id']; ?>">
                                 <button type="submit" name="postEdit" class="btn btnSecond btn-sm">Redigera inlägg</button>
@@ -74,7 +74,7 @@ $proposals = allProposals($pdo);
                         <form action="/postEdit.php" method="post">
                             <div class="form-group border p-3 my-3 posts infoContainer">
                                 <div>
-                                    <h6 class="postTitle"><?php echo $proposal['title']; ?></h6>
+                                    <p class="titleEdit"><?php echo $proposal['title']; ?></p>
                                 </div>
                                 <input type="hidden" name="proposal_id" value="<?php echo $proposal['proposal_id']; ?>">
                                 <button type="submit" name="proposalEdit" class="btn btnSecond btn-sm">Redigera inlägg</button>

@@ -1,5 +1,5 @@
 
-<nav class="fontNav navbar navbar-expand-sm navbar-dark bg-dark navStyle fixed-top"> <!-- Add fixed-top to nav? -->
+<nav class="fontNav navbar navbar-expand-md navbar-dark bg-dark navStyle fixed-top"> <!-- Add fixed-top to nav? -->
   <a class="navbar-brand navStyle" href="index.php"><img class="logo" src="/../app/imgs/site/logo.png"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbarXs">
       <span class="navbar-toggler-icon small"></span>

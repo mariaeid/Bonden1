@@ -3,8 +3,8 @@ require __DIR__.'/views/header.php';
 ?>
 
 <div class="backgroundImgOthers">
-    <h2 class="py-2 mb-2">Styrelsen <?php echo $config['year']; ?> </h2>
-    <div class="flexContainerBoard">
+    <h2 class="py-2 mt-5 mb-2">Styrelsen <?php echo $config['year']; ?> </h2>
+    <div class="flexContainerBoardUsers">
         <div class="boxBoard">
             <p class="boardTitle">Ordförande</p>
             <p class="boardText">Sven Svensson</p>

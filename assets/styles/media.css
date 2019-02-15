@@ -1,0 +1,112 @@
+
+@media screen and (max-width: 1460px) {
+
+  .flexContainerProfile {
+    width: 60%;
+  }
+
+}
+
+@media screen and (max-width: 1366px) {
+
+  .boxPostsProposals {
+    width: 70%;
+  }
+
+}
+
+@media screen and (max-width: 1090px) {
+
+  .flexContainerProfile {
+    width: 80%;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+  .boxPostsProposals {
+    width: 80%;
+  }
+
+  .textBoxPostsProposals {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .postText {
+    font-size: 14px;
+  }
+
+  .postTitle {
+    font-size: 17px;
+  }
+
+  .btnFirstEdit {
+    font-size: 12px;
+  }
+
+  .postProposalsAdd {
+    align-self: center;
+  }
+
+}
+
+@media screen and (max-width: 841px) {
+
+  .backgroundImgOthers {
+    padding: 12% 10%;
+  }
+
+  .profileDetails {
+    margin-top: 5%;
+  }
+
+  .centerButtonsProfile {
+    align-items: center;
+  }
+
+}
+
+@media screen and (max-width: 783px) {
+
+  .flexContainerBoardUsers {
+    justify-content: center;
+  }
+
+}
+
+
+@media screen and (max-width: 575px) {
+
+  .profileDetails {
+    margin-top: 7%;
+  }
+
+}
+
+@media screen and (max-width: 475px) {
+
+  .backgroundImgOthers {
+    padding: 18% 10%;
+  }
+
+  .profileDetails {
+    margin-top: 10%;
+  }
+
+  .boxUsers {
+    width: 270px;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+
+  .backgroundImgOthers {
+    padding: 20% 10%;
+  }
+
+}

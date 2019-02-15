@@ -11,11 +11,8 @@ p {
   font-size: 12px;
 }
 
-.flexContainerRow {
-  flex-direction: row;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+a {
+  font-size: 14px;
 }
 
 .flexContainerColumn {
@@ -54,6 +51,14 @@ p {
   text-decoration: underline;
 }
 
+.highlightForth {
+  color: #c2c3c5;
+}
+
+.highlightForth:hover {
+  color: #999c9f;
+}
+
 .darkText {
   color: #2E2E2E;
 }
@@ -74,6 +79,16 @@ p {
 }
 
 .btnFirst:hover {
+  background-color: #2b2548;
+}
+
+.btnFirstEdit {
+  background-color: #3e3667;
+  color: #fff;
+  font-size: 12px;
+}
+
+.btnFirstEdit:hover {
   background-color: #2b2548;
 }
 
@@ -140,6 +155,15 @@ p {
   padding: 7% 10%;
 }
 
+.backgroundImgForms {
+  background: url("../../app/imgs/site/watercolor_high.jpg") no-repeat center bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100%;
+  padding: 7% 10%;
+}
+
 /* Start page */
 
 .textBoxIndex {
@@ -164,7 +188,46 @@ p {
   text-align: center;
 }
 
+.bodyText {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 /* Posts & Proposals */
+
+.flexContainerPostsProposals {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.postProposalsAdd {
+  align-self: flex-end;
+}
+
+.boxPostsProposals {
+  background: rgba(223,142,98, .6);
+  box-shadow: 1px 1px 3px #9c6344;
+  margin: 1%;
+  padding: 5%;
+  width: 60%;
+}
+
+.postsProposals {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.textBoxPostsProposals {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .postTitle {
   color: #343a40;
@@ -179,30 +242,6 @@ p {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   font-weight: 300;
-}
-
-.flexContainerPostsProposals {
-  min-height: 100vh;
-  flex-direction: column;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.boxPostsProposals {
-  background: rgba(223,142,98, .6);
-  box-shadow: 1px 1px 3px #9c6344;
-  margin-bottom: 3%;
-  width: 60%;
-}
-
-.postsProposals {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: stretch;
 }
 
 /* Info */
@@ -306,16 +345,13 @@ p {
   opacity: 0.98;
   padding: 5%;
   margin: 1%;
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap; */
 }
 
 .textBoxProfileDetails {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .textBoxProfile {
@@ -329,18 +365,22 @@ p {
 .centerButtonsProfile {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+}
+
+.titleEdit {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* BOARD AND USERS */
 
-.flexContainerBoard {
+.flexContainerBoardUsers {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  width: 80%;
   flex-wrap: wrap;
 }
 
@@ -358,16 +398,15 @@ p {
 }
 
 .boxUsers {
-  padding: 5% 5%;
-  margin: 5% 2% 0% 2%;
-  width: 500px;
-  height: 230px;
+  padding: 1% 3%;
+  margin: 1%;
+  width: 300px;
+  height: 220px;
   background: rgba(223,142,98, .7);
   box-shadow: 1px 1px 3px #9c6344;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .boardTitle {
@@ -399,6 +438,24 @@ p {
   margin-bottom: 3%;
   display: flex;
   flex-direction: row;
+}
+
+.mailtoUsers {
+  color: #fff;
+  font-size: 12px;
+}
+
+.mailtoUsers:hover {
+  color: #2b2548;
+}
+
+.mailtoBoard {
+  color: #fff;
+  font-size: 14px;
+}
+
+.mailtoBoard:hover {
+  color: #2b2548;
 }
 
 /* Terms & Conditions */
