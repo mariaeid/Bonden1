@@ -95,58 +95,57 @@ if (close1 !== null) {
     }
   });
 };
+
+
 ////// END - INFO.PHP JavaScript //////
 
 // BOARD CONTACT START - Load only when using board.PHP
-
-const contact1 = document.querySelector('#contact1');
-if (contact1 !== null) {
-
-  // Contact 1
-  const contactDetails1 = document.querySelector('#contactDetails1');
-  contact1.addEventListener('click', (event) => {
-    if (!contactDetails1.textContent) {
-      contactDetails1.innerHTML = `<a class="mailtoBoard" href="mailto:sven.svensson@gmail.com">sven.svensson@gmail.com</a><br> Telefon: 0700 000 000`;
-    }
-    else {
-      contactDetails1.textContent = null;
-    }
-  });
-
-  // Contact 2
-  const contactDetails2 = document.querySelector('#contactDetails2');
-  contact2.addEventListener('click', (event) => {
-    if (!contactDetails2.textContent) {
-      contactDetails2.innerHTML = `<a class="mailtoBoard" href="mailto:anna.andersson@gmail.com">anna.andersson@gmail.com</a><br> Telefon: 0700 000 000`;
-    }
-    else {
-      contactDetails2.textContent = null;
-    }
-  });
-
-  // Contact 3
-  const contactDetails3 = document.querySelector('#contactDetails3');
-  contact3.addEventListener('click', (event) => {
-    if (!contactDetails3.textContent) {
-      contactDetails3.innerHTML = `<a class="mailtoBoard" href="mailto:sjohanna.johansson@gmail.com">sjohanna.johansson@gmail.com</a><br> Telefon: 0700 000 000`;
-    }
-    else {
-      contactDetails3.textContent = null;
-    }
-  });
-
-  // Contact 4
-  const contactDetails4 = document.querySelector('#contactDetails4');
-  contact4.addEventListener('click', (event) => {
-    if (!contactDetails4.textContent) {
-      contactDetails4.innerHTML = `<a class="mailtoBoard" href="mailto:kalle.karlsson@gmail.com">kalle.karlsson@gmail.com</a><br> Telefon: 0700 000 000`;
-    }
-    else {
-      contactDetails4.textContent = null;
-    }
-  });
-
-
-}
+// const contact1 = document.querySelector('#contact1');
+// if (contact1 !== null) {
+//
+//   // Contact 1
+//   const contactDetails1 = document.querySelector('#contactDetails1');
+//   contact1.addEventListener('click', (event) => {
+//     if (!contactDetails1.textContent) {
+//       contactDetails1.innerHTML = `<a class="mailtoBoard" href="mailto:sven.svensson@gmail.com">sven.svensson@gmail.com</a><br> Telefon: 0700 000 000`;
+//     }
+//     else {
+//       contactDetails1.textContent = null;
+//     }
+//   });
+//
+//   // Contact 2
+//   const contactDetails2 = document.querySelector('#contactDetails2');
+//   contact2.addEventListener('click', (event) => {
+//     if (!contactDetails2.textContent) {
+//       contactDetails2.innerHTML = `<a class="mailtoBoard" href="mailto:anna.andersson@gmail.com">anna.andersson@gmail.com</a><br> Telefon: 0700 000 000`;
+//     }
+//     else {
+//       contactDetails2.textContent = null;
+//     }
+//   });
+//
+//   // Contact 3
+//   const contactDetails3 = document.querySelector('#contactDetails3');
+//   contact3.addEventListener('click', (event) => {
+//     if (!contactDetails3.textContent) {
+//       contactDetails3.innerHTML = `<a class="mailtoBoard" href="mailto:sjohanna.johansson@gmail.com">sjohanna.johansson@gmail.com</a><br> Telefon: 0700 000 000`;
+//     }
+//     else {
+//       contactDetails3.textContent = null;
+//     }
+//   });
+//
+//   // Contact 4
+//   const contactDetails4 = document.querySelector('#contactDetails4');
+//   contact4.addEventListener('click', (event) => {
+//     if (!contactDetails4.textContent) {
+//       contactDetails4.innerHTML = `<a class="mailtoBoard" href="mailto:kalle.karlsson@gmail.com">kalle.karlsson@gmail.com</a><br> Telefon: 0700 000 000`;
+//     }
+//     else {
+//       contactDetails4.textContent = null;
+//     }
+//   });
+// }
 
 // END BOARD.PHP

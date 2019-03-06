@@ -7,31 +7,34 @@
   <div class="navbar-collapse collapse" id="collapsingNavbarXs">
       <ul class="navbar-nav">
           <li class="nav-item">
-              <a class="nav-link <?php echo $_SERVER['SCRIPT_NAME'] === '/posts.php' ? 'active' : ''; ?>" href="/posts.php">Nyheter</a>
+              <?php if (isset($_SESSION['user'])): ?>
+              <a class="nav-link <?php echo $_SERVER['SCRIPT_NAME'] === '/posts.php' ? 'active' : ''; ?>" href="/posts.php"><?php echo "Nyheter" ?></a>
+              <?php endif; ?>
           </li><!-- /nav-item -->
           <li class="nav-item">
               <?php if (isset($_SESSION['user'])): ?>
                   <a class="nav-link <?php echo $_SERVER['SCRIPT_NAME'] === '/proposals.php' ? 'active' : ''; ?>" href="/proposals.php"><?php echo "Motioner" ?></a>
               <?php endif; ?>
           </li><!-- /nav-item -->
+          <?php if (isset($_SESSION['user'])): ?>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle
+            <a class="nav-link <?php echo 'dropdown-toggle'; ?>
+            <?php endif; ?>
             <?php if ($_SERVER['SCRIPT_NAME'] === '/info.php' || $_SERVER['SCRIPT_NAME'] === '/board.php' || $_SERVER['SCRIPT_NAME'] === '/users.php'): ?>
                 <?php echo 'active' ?>
                 <?php else: ?>
                     <?php echo '' ?>
-            <?php endif; ?>
+                <?php endif; ?>
+            <?php if (isset($_SESSION['user'])): ?>
              " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Om föreningen
+              <?php echo "Om föreningen" ?>
             </a>
             <div class="dropdown-menu bg-dark " aria-labelledby="navbarDropdown">
-              <a class="dropdown-item fontNavDropdown dropdownHover" href="/info.php">Allmän information</a>
-              <a class="dropdown-item fontNavDropdown dropdownHover" href="/board.php">Styrelsen</a>
-              <?php if (isset($_SESSION['user'])): ?>
-                  <a class="dropdown-item fontNavDropdown dropdownHover" href="/users.php"><?php echo "Medlemmar" ?></a>
-              <?php endif; ?>
+              <a class="dropdown-item fontNavDropdown dropdownHover" href="/info.php"><?php echo "Allmän information" ?></a>
+              <a class="dropdown-item fontNavDropdown dropdownHover" href="/board.php"><?php echo "Styrelsen" ?></a>
+              <a class="dropdown-item fontNavDropdown dropdownHover" href="/users.php"><?php echo "Medlemmar" ?></a>
+          <?php endif; ?>
           </li>
-
       </ul>
       <ul class="navbar-nav ml-auto">
           <li class="nav-item">

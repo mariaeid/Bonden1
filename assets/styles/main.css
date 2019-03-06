@@ -310,6 +310,7 @@ a {
   border: 1px solid #888;
   width: 80%;
   color: #fff;
+  font-size: 14px;
   display: flex;
   flex-direction: column;
 }
@@ -452,6 +453,7 @@ a {
 .mailtoBoard {
   color: #fff;
   font-size: 14px;
+  margin-top: 15px;
 }
 
 .mailtoBoard:hover {

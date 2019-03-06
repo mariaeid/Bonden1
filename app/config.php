@@ -6,6 +6,6 @@ declare(strict_types=1);
 
 return [
     'title' => 'Samfälligheten Bonden Ett',
-    'year' => '2018',
+    'year' => '2019',
     'database_path' => sprintf('sqlite:%s/database/database.db', __DIR__),
 ];

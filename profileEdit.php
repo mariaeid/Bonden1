@@ -63,7 +63,7 @@ if(!isset($_SESSION['user'])){ redirect("/"); } else { $user = $_SESSION['user']
 
             <button type="submit" name="edit" class="btn btnFirst">Spara</button>
             <button type="submit" name="cancel" class="btn btnFirst mx-2" formnovalidate>Ångra</button>
-            <button type="submit" name="delete" class="btn btnSecond" onclick="return confirmDeleteAccount();" formnovalidate ><i class="fa fa-trash-o fa-lg"></i> Ta bort</button>
+            <button type="submit" name="delete" class="btn btnSecond" onclick="return confirmDeleteAccount();" formnovalidate ><i class="fa fa-trash-o fa-lg"></i> Ta bort profil</button>
         </form>
     </article>
 
