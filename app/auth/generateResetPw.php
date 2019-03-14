@@ -21,7 +21,8 @@ if (isset($_POST['reset'])) {
 
         else {
             $resetPassword = substr(md5(microtime()),rand(0,26),7);
-            // die(var_dump($email));
+            $resetHashedPassword = password_hash($resetPassword, PASSWORD_DEFAULT);
+
             $statement = $pdo->prepare("UPDATE users SET reset_password = :reset_password WHERE email = :email");
 
 
@@ -32,7 +33,7 @@ if (isset($_POST['reset'])) {
             }
 
             $statement->bindParam(':email', $email, PDO::PARAM_STR);
-            $statement->bindParam(':reset_password', $resetPassword, PDO::PARAM_STR);
+            $statement->bindParam(':reset_password', $resetHashedPassword, PDO::PARAM_STR);
             $statement->execute();
 
             $to = $email;

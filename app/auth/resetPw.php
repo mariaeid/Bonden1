@@ -26,7 +26,8 @@ if (isset($_POST['resetPw'])) {
         //If the email address exists and the password match we store the user details (except for the pw) in a session, remove the errors and redirects the user to the start page
         else {
             //Verification to see that the entered new pw matches the user's reset pw
-            if ($currentPassword === $user['reset_password'])
+            if (password_verify($currentPassword, $user['reset_password']))
+            // if ($currentPassword === $user['reset_password'])
             {
                 $_SESSION['user'] = $user;
 

@@ -1,5 +1,6 @@
 <?php
 require __DIR__.'/views/header.php';
+if(!isset($_SESSION['user'])){ redirect("/"); } else { $user = $_SESSION['user'];}
 
 //Getting all posts by calling the function allPosts from functions.php
 $posts = allPosts($pdo);

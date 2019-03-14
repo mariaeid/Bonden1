@@ -230,7 +230,7 @@ a {
 }
 
 .postTitle {
-  color: #343a40;
+  color: #3e3667;
   margin-bottom: 3%;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
@@ -238,10 +238,11 @@ a {
 
 .postText {
   white-space: pre-wrap;
-  color: #fff;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 16px;
+  color: #06011a;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
   font-weight: 300;
+  padding-right: 20px;
 }
 
 /* Info */
@@ -313,6 +314,10 @@ a {
   font-size: 14px;
   display: flex;
   flex-direction: column;
+}
+
+.infoText {
+  font-size: 14px;
 }
 
 .close {
@@ -468,4 +473,8 @@ a {
   padding: 5%;
   margin: 1%;
   width: 70%;
+}
+
+.termsText {
+  font-size: 14px;
 }

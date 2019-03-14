@@ -94,6 +94,31 @@ if (close1 !== null) {
       modal3.style.display = "none";
     }
   });
+
+// Get the fourth modal
+const modal4 = document.querySelector('#myModal4');
+const close4 = document.querySelector('#close4');
+const selection4All = document.querySelectorAll('#selection4');
+
+// When the user clicks on the button, open the modal
+selection4All.forEach(function(selection4) {
+  selection4.addEventListener('click', (event) => {
+    modal4.style.display = "block";
+  });
+});
+
+// When the user clicks on close, close the modal
+close4.addEventListener('click', (event) => {
+    modal4.style.display = "none";
+});
+
+// When the user clicks anywhere outside of the modal, close it
+window.addEventListener('click', (event) => {
+  if (event.target == modal4) {
+    modal4.style.display = "none";
+  }
+});
+
 };
 
 
