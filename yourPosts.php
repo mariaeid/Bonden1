@@ -28,7 +28,7 @@ $posts = allPosts($pdo);
             <?php endforeach; ?>
     </article>
     <article>
-        <form action="/newpost.php" method="post">
+        <form action="/newPost.php" method="post">
             <div class="form-group">
                 <button type="submit" name="newLink" class="btn btn-light">Add a new post</button>
             </div>

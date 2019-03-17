@@ -8,7 +8,7 @@ $posts = allPosts($pdo);
 
 <div class="backgroundImgOthers">
     <div class="flexContainerPostsProposals">
-        <form action="/newpost.php" method="post" class="postProposalsAdd mb-3">
+        <form action="/newPost.php" method="post" class="postProposalsAdd mb-3">
             <?php if (isset($_SESSION['user'])): ?>
                 <button type="submit" name="newLink" class="btn btnSecond"><?php echo "Lägg till nyhet" ?></button>
             <?php endif; ?>

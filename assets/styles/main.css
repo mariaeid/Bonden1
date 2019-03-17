@@ -26,7 +26,7 @@ a {
 }
 
 .fontMedium {
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .highlightFirst {
@@ -425,6 +425,10 @@ a {
 .boardText {
   font-size: 14px;
   font-weight: normal;
+}
+
+.fa-address-card {
+  color: #2b2548;
 }
 
 .boardContact:hover {

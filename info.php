@@ -84,8 +84,8 @@ $posts = allPosts($pdo);
           <div class="modalContent">
             <span class="close" id="close4">&times;</span>
             <h4 class="pb-2">Protokoll från årsmöten</h4>
-            <a href="app/uploadedFiles/protocol/2018.pdf" class="highlightThird" target="_blank">2018</a>
-            <a href="app/uploadedFiles/protocol/2018.pdf" class="highlightThird" target="_blank">2017</a>
+            <!-- <a href="app/uploadedFiles/protocol/2018.pdf" class="highlightThird" target="_blank">2018</a> -->
+            <p>Här kommer protokoll från årsmöten finnas.</p>
             </div>
           </div>
         </div>
