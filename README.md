@@ -1,6 +1,6 @@
 # Bonden1
 
-Site built for the association Bonden 1. Functionalities included on the site are log in and sign up possibilities, profile page, news feed, possibility to create proposals and general information about the association. Can be found live at www.bonden1.se.
+Site built for the association Bonden 1. Functionalities included on the site are log in and sign up possibilities, profile page, news feed, possibility to create proposals and general information about the association.
 
 ## Getting Started
 
